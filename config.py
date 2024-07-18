@@ -4,6 +4,7 @@ import os
 class Config(object):
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", None)
     IS_PREMIUM = False
+    GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
     MODES = ["video-video", "video-audio", "video-subtitle", "extract-streams"]
     API_HASH = "fa4c3f582286d969ab1d08449e9533e8"
     BOT_TOKEN = "7277558508:AAGq41OAe9SchpFgj115FUHZMHY7oV_1qoE"
